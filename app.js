@@ -7,7 +7,7 @@ document.getElementById("calculator").onchange = function () {
   // calculations of tip and bill per person
   let tipValue = (totalBill / 100) * tipPercent;
   let billPerPerson = (Math.round(((totalBill + tipValue) / splitByPerson) * 100) / 100).toFixed(2);
-  let tipEach = Math.floor(tipValue / splitByPerson);
+  let tipEach = (Math.round((tipValue / splitByPerson) * 100) / 100).toFixed(2);
 
   // output input values and math calc to screen
   document.getElementById("tipOutput").innerHTML = tipPercent + "%";
