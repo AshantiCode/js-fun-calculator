@@ -14,34 +14,35 @@
 	<div class="background-image">
 
 		<div class="overlay">
-			<div class="calculator-wrapper">
+			<div class="calculator-wrapper" id="calculator">
 				<h1 class="calculator-heading">Tip Calculator</h1>
 				<hr>
 				<div class="calculator-content">
 					<label for="amount">Total Bill:</label>
-					<input type="text" placeholder="Enter your total amount..." name="amount">
+					<input type="number" placeholder="Enter your total amount..." name="amount" id="billInput">
 				</div>
 				<div class="calculator-content">
-					<label for="tip">Tip:</label>
-					<input type="range" name="tip">
+					<label for="tip">Tip in percentage:</label>
+					<input type="range" name="tip" value="0" id="tipInput">
+					<span id="tipOutput"></span>
 				</div>
 				<div class="calculator-content">
-					<label for="split">Split:</label>
-					<input type="range" name="split">
+					<label for="split">Split by number of people:</label>
+					<input type="range" name="split" value="0" min="1" max="10" id="splitInput">
+					<span id="splitOutput"></span>
 				</div>
 				<hr>
 				<div class="calculator-content">
-					<label for="amount">New Bill (per person):</label>
+					<label for="amount">New Bill (per person):</label><span id="newBill">0 €</span>
 				</div>
 				<div class="calculator-content">
-					<label for="amount">Tip Amount (per person):</label>
+					<label for="amount">Tip Amount (per person):</label><span id="tipEach">0 €</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-
+	<script src="./app.js"></script>
 </body>
 
 </html>
