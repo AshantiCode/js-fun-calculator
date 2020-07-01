@@ -29,7 +29,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -39,9 +39,10 @@ body {
 		padding: 0 3rem 2rem;
 		width: 80%;
 		margin: 50px auto 0;
-		border-radius: 25px;
 		z-index: 2;
-		background: linear-gradient(-35deg, rgba(63, 69, 41, 0.9), rgba(149, 36, 32, 0.9));
+		border: 5px solid;
+		border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+		border-radius: 2em;
 
 		@media (min-width: 768px) {
 			width: 60%;
@@ -74,8 +75,5 @@ body {
 		&.total {
 			font-weight: 700;
 		}
-
 	}
-
-
 }
