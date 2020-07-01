@@ -18,18 +18,26 @@
 				<h1 class="calculator-heading">Tip Calculator</h1>
 				<hr>
 				<div class="calculator-content">
-					<label for="amount">Total Bill:</label>
+					<label for="amount">Bill:</label>
 					<input type="number" placeholder="Enter your total amount..." name="amount" id="billInput">
 				</div>
 				<div class="calculator-content">
 					<label for="tip">Tip in percentage:</label>
-					<input type="range" name="tip" value="0" id="tipInput">
-					<span id="tipOutput"></span>
+					<div>
+						<input type="range" name="tip" value="0" id="tipInput">
+						<span id="tipOutput"></span>
+					</div>
+				</div>
+				<div class="calculator-content total ">
+					<label for="totalBill">Total: </label>
+					<span id="totalBill">0 €</span>
 				</div>
 				<div class="calculator-content">
 					<label for="split">Split by number of people:</label>
-					<input type="range" name="split" value="0" min="1" max="10" id="splitInput">
-					<span id="splitOutput"></span>
+					<div>
+						<input type="range" name="split" value="0" min="1" max="10" id="splitInput">
+						<span id="splitOutput"></span>
+					</div>
 				</div>
 				<hr>
 				<div class="calculator-content">
