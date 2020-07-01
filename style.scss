@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	letter-spacing: 1px;
+}
+
 
 
 .background-image {
@@ -30,30 +34,36 @@
 	&-wrapper {
 		color: white;
 		width: 80%;
-		margin: 200px auto 0;
+		margin: 50px auto 0;
 		border-radius: 10px;
 		z-index: 2;
 
 		@media (min-width: 768px) {
 			width: 60%;
+			margin-top: 80px;
 		}
 
 		@media (min-width: 1040px) {
 			width: 50%;
+			margin-top: 150px;
 		}
 	}
 
 	&-heading {
 		text-align: center;
 		padding: 2rem;
+		font-size: 3rem;
 	}
 
 	&-content {
+		font-family: Helvetica;
 		padding: 1.4rem 0;
 		font-size: 1.2rem;
 		display: flex;
 		justify-content: space-between;
+
+		input[type="number"] {
+			padding: 0.2rem 0.5rem;
+		}
 	}
-
-
 }
