@@ -28,10 +28,11 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .calculator-wrapper {
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 1rem 4rem 2rem;
   width: 80%;
